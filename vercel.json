@@ -1,0 +1,29 @@
+{
+  "outputDirectory": "famdt.com/www.famdt.com",
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "(?<id>.*)"
+        }
+      ],
+      "destination": "/index.html@p=:id.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "(?<id>.*)"
+        }
+      ],
+      "destination": "/$1@p=:id.html"
+    }
+  ]
+}

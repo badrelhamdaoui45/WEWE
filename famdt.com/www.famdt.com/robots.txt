@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /secupress-fa2f45f9/
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+User-agent: *
+Disallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://www.famdt.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK
